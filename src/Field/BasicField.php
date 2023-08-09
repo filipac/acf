@@ -131,7 +131,7 @@ abstract class BasicField
     {
         // try programatically first
         $f = get_field_object($fieldKey, $this->post->ID);
-        if($f && isset($f['type']) {
+        if($f && isset($f['type'])) {
             $this->type = $f['type'];
             return $this->type;
         }
